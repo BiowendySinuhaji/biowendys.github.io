@@ -1,78 +1,81 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
+	<meta charset="utf-8">
+	<title>xbox.com</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="icon" href="favicon.ico">
 
-body {
-  margin: 0;
-  font-family: Arial;
-  font-size: 17px;
-}
-
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%; 
-  min-height: 100%;
-}
-
-.content {
-  position: fixed;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  width: 100%;
-  padding: 20px;
-}
-
-#myBtn {
-  width: 200px;
-  font-size: 18px;
-  padding: 10px;
-  border: none;
-  background: #000;
-  color: #fff;
-  cursor: pointer;
-}
-
-#myBtn:hover {
-  background: #ddd;
-  color: black;
-}
-</style>
 </head>
 <body>
+	<div class="topnav">
+      <a target="_blank" href="https://www.xbox.com/en-US/en-WW/"><img class="img5.png" src="img5.png" width="110px"></a>
+	  <a target="_blank" href="https://www.xbox.com/en-US/en-WW/"><img class="img6.png" src="img6.png" width="80px"></a>
+	  <a href="https://www.xbox.com/en-US/en-WW/">Game Pass</a>
+	  <a href="https://www.xbox.com/en-US/en-WW/">Games</a>
+	  <a href="https://www.xbox.com/en-US/en-WW/">Devices</a>
+	  <a href="https://www.xbox.com/en-US/en-WW/">Play</a>
+	  <a href="https://www.xbox.com/en-US/en-WW/">Coummunity</a>
+	  <a href="https://www.xbox.com/en-US/en-WW/">Support</a>
+	  <a href="https://www.xbox.com/en-US/en-WW/">My Xbox</a>
+	  <a href="https://www.xbox.com/en-US/en-WW/">Developers</a>
+	  <a href="index.html">Home</a>
+      <a href="biodata.html">Biodata</a>
+      <a href="contactus.html">Contact Us</a>
+      <a href="https://fti.unai.edu/">FTI UNAI</a>
+      <a href="https://unai.edu/">UNAI</a>
+	</div>
 
-<video autoplay muted loop id="myVideo">
-  <source src="rain.mp4" type="video/mp4">
-  Your browser does not support HTML5 video.
-</video>
-
-<div class="content">
-  <h1>Heading</h1>
-  <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore latine molestiae, ad mutat oblique delicatissimi pro.</p>
-  <button id="myBtn" onclick="myFunction()">Pause</button>
+<div class="image">
+	<picture><img src="img/xbox.jpg"></picture>
+        <div>
+            <h1 class="c-heading">This trail may be a little too cold.</h1>
+            <p class="c-subheading">Page not found.</p>
+        </div>
 </div>
 
-<script>
-var video = document.getElementById("myVideo");
-var btn = document.getElementById("myBtn");
+<div class="grid-container">
+  <div class="grid-image"><img src="img/img1.jpg">
+  	<h3>Xbox Games</h3>
+  	<p>Browse Xbox games to find the latest hot new releases, blockbuster exclusives, Indie games and more.</p>
+  </div>
+  <div class="grid-image"><img src="img/img2.jpg">
+  	<h3>Xbox Consoles</h3>
+  	<p>Choose the Xbox that is right for you.</p>
+  </div>
+</div>
 
-function myFunction() {
-  if (video.paused) {
-    video.play();
-    btn.innerHTML = "Pause";
-  } else {
-    video.pause();
-    btn.innerHTML = "Play";
-  }
-}
-</script>
-
+<div class="row">
+  <div class="column">
+    <h2>Browser</h2>
+    	<ul>
+    		<li><a href="#">Xbox Consoles</a></li>
+    		<li><a href="#">Xbox Games</a></li>
+    		<li><a href="#">Xbox Game Pass</a></li>
+    		<li><a href="#">Xbox accessories</a></li>
+    	</ul>
+  </div>
+  
+  <div class="column">
+    <h2>Resources</h2>
+    	<ul>
+	    	<li><a href="#">Xbox Consoles</a></li>
+	    	<li><a href="#">Xbox Games</a></li>
+			<li><a href="#">Xbox Game Pass</a></li>
+			<li><a href="#">Xbox accessories</a></li>
+    	</ul>	
+  </div>
+  
+  <div class="column">
+    <h2>Microsoft Store</h2>
+    	<ul>
+	    	<li><a href="#">Xbox Consoles</a></li>
+	    	<li><a href="#">Xbox Games</a></li>
+			<li><a href="#">Xbox Game Pass</a></li>
+			<li><a href="#">Xbox accessories</a></li>
+    	</ul>	
+  </div>
+</div>
 </body>
 </html>
